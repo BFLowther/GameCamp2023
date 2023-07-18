@@ -5,6 +5,7 @@ using UnityEngine;
 public class move : MonoBehaviour
 {
     public int speed;
+    public int jumpforce;
     public Rigidbody2D rigi;
 
 
@@ -19,5 +20,8 @@ rigi=GetComponent<Rigidbody2D>();
     void Update()
     {
         rigi.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*speed,rigi.velocity.y);
+        if (Input.GetKeyDown(KeyCode.UpArrow)) {
+            rigi.AddForce(Vector2.up *jumpforce, ForceMode2D.Impulse);
+        }
     }
 }
