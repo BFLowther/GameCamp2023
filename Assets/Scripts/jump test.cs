@@ -8,9 +8,9 @@ public class jumptest : MonoBehaviour
     public float jumpAmount = 10;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
-        }
+        if (Input.GetKeyDown(KeyCode.Space=true))
+            {
+                rb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
+            }
     }
 }
