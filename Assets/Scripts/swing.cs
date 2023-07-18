@@ -18,17 +18,20 @@ public class swing : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0, velocity * direction * Time.deltaTime);
-        if (direction == 1) {
-            if (transform.localEulerAngles.z > 90 - 5 && transform.localEulerAngles.z < 90 + 5) {
-                direction = -1;
-            }
+        if (transform.localEulerAngles.z >= 0 && transform.localEulerAngles.z <= 180) {
+            velocity -= 1;
         } else {
-            if (transform.localEulerAngles.z < 270 + 5 && transform.localEulerAngles.z > 270 - 5) {
-                direction = 1;
-            }
+            velocity += 1;
         }
-
-        Debug.Log(transform.localEulerAngles.z + " " + direction);
+        // if (direction == 1) {
+        //     if (transform.localEulerAngles.z > 90 - 5 && transform.localEulerAngles.z < 90 + 5) {
+        //         direction = -1;
+        //     }
+        // } else {
+        //     if (transform.localEulerAngles.z < 270 + 5 && transform.localEulerAngles.z > 270 - 5) {
+        //         direction = 1;
+        //     }
+        // }
 
         // if (transform.localEulerAngles.z > 180) {
         //     velocity += 1;
