@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using SuperPupSystems.Helper;
 
 public class HealthBar : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private Slider slider;
+
+    public Health health;
+
+    void Start(){
+        slider = GetComponent<Slider>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Update(){
+        slider.value = health.CurrentHealth;
     }
+    
 }
