@@ -18,6 +18,6 @@ public class Arrow : MonoBehaviour
     void FixedUpdate() {
         rb2d.MovePosition(rb2d.position + new Vector2(direction * xspeed * Time.fixedDeltaTime, yspeed * Time.fixedDeltaTime));
         if (xspeed > 0) {xspeed -= 0.1f * direction;}
-        yspeed -= 0.01f;
+        yspeed -= 0.025f;
     }
 }
