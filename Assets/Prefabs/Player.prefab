@@ -135,6 +135,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+  anim: {fileID: 0}
 --- !u!70 &6464336186656162305
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
