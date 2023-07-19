@@ -18,11 +18,24 @@ public class Swing : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0, velocity * direction * Time.deltaTime);
-        if (transform.localEulerAngles.z >= 0 && transform.localEulerAngles.z <= 180) {
-            velocity -= 1;
+        if (transform.localEulerAngles.z > 0 && transform.localEulerAngles.z < 180) {
+            velocity -= 1; //if (velocity < 50 && transform.localEulerAngles.z > 70) {velocity -= 0.75f; Debug.Log("applied -");}
         } else {
+            velocity += 1; //if (velocity > -50 && transform.localEulerAngles.z < 290) {velocity += 0.75f; Debug.Log("applied +");}
+        } 
+        
+        if (velocity > 240) {
+            velocity -= 1;
+        } else if (velocity < -240) {
             velocity += 1;
         }
+
+        if ((40 < velocity && velocity < 160) || (-40 > velocity && velocity > -160)) {
+            velocity += 2.5f/velocity;
+        }
+
+        // Debug.Log(velocity);
+
         // if (direction == 1) {
         //     if (transform.localEulerAngles.z > 90 - 5 && transform.localEulerAngles.z < 90 + 5) {
         //         direction = -1;
