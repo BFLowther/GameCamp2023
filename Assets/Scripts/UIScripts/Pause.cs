@@ -35,7 +35,16 @@ public class Pause : MonoBehaviour
         pausePanel.SetActive(false);
     }
 
-    public void BackToStart(){
+    public void BackToStart()
+    { 
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
+        else{
+            Debug.Log("timeScale is not 0");
+        }
+        
         SceneManager.LoadScene("StartScreen");
     }
 }
