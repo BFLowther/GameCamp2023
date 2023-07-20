@@ -15,6 +15,13 @@ public class StartScreen : MonoBehaviour
     }
 
     public void Credits(){
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
+        else{
+            Debug.Log("timeScale is not 0");
+        }
         SceneManager.LoadScene("Credits");
     }
 }
