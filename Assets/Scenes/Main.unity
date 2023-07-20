@@ -82939,6 +82939,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 3939899657812349036, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2de5790fc84b1496b8cd70cf01a7c806, type: 2}
+    - target: {fileID: 3939899657812349036, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3962958685227525023, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
