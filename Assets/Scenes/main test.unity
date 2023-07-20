@@ -76311,6 +76311,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3942989408783091822, guid: 4f9550a5910cc437db38d2564eb21152, type: 3}
+      propertyPath: MaxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942989408783091822, guid: 4f9550a5910cc437db38d2564eb21152, type: 3}
+      propertyPath: CurrentHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4839445869571512834, guid: 4f9550a5910cc437db38d2564eb21152, type: 3}
       propertyPath: jumpforce
       value: 425
