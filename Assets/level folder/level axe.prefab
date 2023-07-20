@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 328614449003357694, guid: 0b50e4206da96924eaf378efff5bef6a, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1382509049279888379, guid: 0b50e4206da96924eaf378efff5bef6a, type: 3}
       propertyPath: m_RootOrder
@@ -66,12 +66,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4554645155700772302, guid: 0b50e4206da96924eaf378efff5bef6a, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8517129231686085832, guid: 0b50e4206da96924eaf378efff5bef6a, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8556398364321568318, guid: 0b50e4206da96924eaf378efff5bef6a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0bd574b404b1240529b6d33d73d355c9, type: 3}
     - target: {fileID: 8556398364321568318, guid: 0b50e4206da96924eaf378efff5bef6a, type: 3}
       propertyPath: m_SortingOrder
       value: 1

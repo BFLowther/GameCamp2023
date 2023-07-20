@@ -53,12 +53,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1081486751967313992, guid: b0fb43d3b11298e4496dca26c6dcc970, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f01ab0bc1cfb8454e97fbe7b00e86275, type: 3}
+    - target: {fileID: 1081486751967313992, guid: b0fb43d3b11298e4496dca26c6dcc970, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081486751967313992, guid: b0fb43d3b11298e4496dca26c6dcc970, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081486751967313992, guid: b0fb43d3b11298e4496dca26c6dcc970, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081486751967313992, guid: b0fb43d3b11298e4496dca26c6dcc970, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081486751967313992, guid: b0fb43d3b11298e4496dca26c6dcc970, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5596193932578839073, guid: b0fb43d3b11298e4496dca26c6dcc970, type: 3}
       propertyPath: m_Name
-      value: pitfall Variant
+      value: pitfall placement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
