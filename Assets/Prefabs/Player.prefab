@@ -131,7 +131,7 @@ MonoBehaviour:
   speed: 5
   jumpforce: 8
   rigi: {fileID: 57772207034900467}
-  boxSize: {x: 1, y: 1}
+  boxSize: {x: 0.2, y: 3}
   maxDistance: 0.23
   layerMask:
     serializedVersion: 2
