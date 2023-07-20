@@ -84122,7 +84122,7 @@ PrefabInstance:
     - target: {fileID: 1092735467272421992, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 2de5790fc84b1496b8cd70cf01a7c806, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 1092735467272421992, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -84130,7 +84130,7 @@ PrefabInstance:
     - target: {fileID: 2904167695096218113, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 2de5790fc84b1496b8cd70cf01a7c806, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2904167695096218113, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -84146,7 +84146,7 @@ PrefabInstance:
     - target: {fileID: 3939899657812349036, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 2de5790fc84b1496b8cd70cf01a7c806, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3939899657812349036, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -84242,7 +84242,7 @@ PrefabInstance:
     - target: {fileID: 7840216635006901959, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 2de5790fc84b1496b8cd70cf01a7c806, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7840216635006901959, guid: 1ab3b50bc416e413fafb96eb6fab68ff, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
