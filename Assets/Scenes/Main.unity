@@ -76133,7 +76133,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 199913937756178606, guid: 4f9550a5910cc437db38d2564eb21152, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1379174469}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2984789962672991929, guid: 4f9550a5910cc437db38d2564eb21152, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1959410257}
   m_SourcePrefab: {fileID: 100100000, guid: 4f9550a5910cc437db38d2564eb21152, type: 3}
 --- !u!1001 &695206273
 PrefabInstance:
@@ -76147,13 +76150,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBar
       objectReference: {fileID: 0}
-    - target: {fileID: 1339880320290259854, guid: 0763f4b5e1af44da09995fabc65f4bd7, type: 3}
-      propertyPath: m_AnchorMax.x
+    - target: {fileID: 531330629608186062, guid: 0763f4b5e1af44da09995fabc65f4bd7, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1339880320290259854, guid: 0763f4b5e1af44da09995fabc65f4bd7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339880320290259854, guid: 0763f4b5e1af44da09995fabc65f4bd7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584885520785874915, guid: 0763f4b5e1af44da09995fabc65f4bd7, type: 3}
       propertyPath: m_Pivot.x
@@ -82165,6 +82172,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2282768556496791794, guid: 0763f4b5e1af44da09995fabc65f4bd7, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1959410257}
     - target: {fileID: 6584885520785874915, guid: 0763f4b5e1af44da09995fabc65f4bd7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -82339,6 +82350,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3976931060506183077, guid: f835e8e33f89e48dc953afb570d70fa3, type: 3}
   m_PrefabInstance: {fileID: 256847074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1335667581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2984789962672991929, guid: 4f9550a5910cc437db38d2564eb21152, type: 3}
+  m_PrefabInstance: {fileID: 681450751}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1379174469 stripped
 RectTransform:
@@ -82906,6 +82922,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 199913937756178606, guid: 4f9550a5910cc437db38d2564eb21152, type: 3}
   m_PrefabInstance: {fileID: 681450751}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1959410257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335667581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604dfbbf654f92618bc36972daaa4968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  Healed:
+    m_PersistentCalls:
+      m_Calls: []
+  Hurt:
+    m_PersistentCalls:
+      m_Calls: []
+  OutOfHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  MaxHealth: 10
+  CurrentHealth: 10
 --- !u!4 &2016124767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1241437096915033466, guid: 22b0366e1686e450b9724e53096df15c, type: 3}
