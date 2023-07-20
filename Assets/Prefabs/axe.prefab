@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1382509049279888379}
   - component: {fileID: 8556398364321568318}
   - component: {fileID: 2325510488390027149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6663077259096003746}
   - component: {fileID: 328614449003357694}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 4554645155700772302}
   - component: {fileID: 8517129231686085832}
   - component: {fileID: 3562518774595064806}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
