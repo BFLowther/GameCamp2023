@@ -18,6 +18,7 @@ public class Move : MonoBehaviour
     public bool rightFacing;
     public bool jumpedLastFrame;
     public Vector2 boxCastPosition;
+    public bool dead = false;
 
 Animator anim;
     // Start is called before the first frame update
@@ -64,6 +65,9 @@ Animator anim;
     }
 
     void FixedUpdate() {
+        if (dead)
+            return; 
+        
         boxCastPosition = new Vector2 (transform.position.x,transform.position.y-1);
         if (jumpedLastFrame) {
             anim.SetBool("Jumping", true);
@@ -101,5 +105,6 @@ Animator anim;
     public void Death()
     {
         anim.SetBool("Dying", true);
+        dead = true;
     }
 }
