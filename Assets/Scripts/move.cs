@@ -10,8 +10,7 @@ public class Move : MonoBehaviour
 
     public Vector2 boxSize;
     public Vector2 boxSizeUp;
-    //public Collider standingCollider;
-    //public Collider creepingCollider;
+
 
     public float maxDistance;
     public LayerMask layerMask;
@@ -27,8 +26,7 @@ Animator anim;
         rigi=GetComponent<Rigidbody2D>();
         anim=GetComponent<Animator>();
         jumpedLastFrame = false;
-        //standingCollider = GetComponent<>();
-        //creepingCollider = GetComponent<>();
+
     }
 
     // Update is called once per frame
