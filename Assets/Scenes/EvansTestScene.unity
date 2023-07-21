@@ -358,6 +358,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 877796798507350441, guid: 83492ebb153764cef9474ff4c281876c, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 877796798507350441, guid: 83492ebb153764cef9474ff4c281876c, type: 3}
       propertyPath: lengthInSec
       value: 5
       objectReference: {fileID: 0}
@@ -487,6 +491,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7267708381930891087, guid: b272d2b2fd4fb4fb986b00dc216421ef, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267708381930891087, guid: b272d2b2fd4fb4fb986b00dc216421ef, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 1000
       objectReference: {fileID: 0}
@@ -560,6 +568,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 9004920606209725431, guid: f40195cb747ad4274a6c430132abe9ff, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004920606209725431, guid: f40195cb747ad4274a6c430132abe9ff, type: 3}
       propertyPath: InitialModule.startLifetime.minScalar
       value: 100
       objectReference: {fileID: 0}
@@ -583,6 +595,14 @@ PrefabInstance:
     - target: {fileID: 11928211731912847, guid: d081a2a908b114103be62458b07e516d, type: 3}
       propertyPath: m_Name
       value: Cloud 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3918833936064212533, guid: d081a2a908b114103be62458b07e516d, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3918833936064212533, guid: d081a2a908b114103be62458b07e516d, type: 3}
+      propertyPath: prewarm
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3918833936064212533, guid: d081a2a908b114103be62458b07e516d, type: 3}
       propertyPath: InitialModule.startLifetime.minScalar
