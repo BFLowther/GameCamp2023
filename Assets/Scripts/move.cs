@@ -9,9 +9,9 @@ public class Move : MonoBehaviour
     public Rigidbody2D rigi;
 
     public Vector2 boxSize;
-    public Vector2 boxSizeRight;
-    public Vector2 boxSizeLeft;
     public Vector2 boxSizeUp;
+    //public Collider standingCollider;
+    //public Collider creepingCollider;
 
     public float maxDistance;
     public LayerMask layerMask;
@@ -27,6 +27,8 @@ Animator anim;
         rigi=GetComponent<Rigidbody2D>();
         anim=GetComponent<Animator>();
         jumpedLastFrame = false;
+        //standingCollider = GetComponent<>();
+        //creepingCollider = GetComponent<>();
     }
 
     // Update is called once per frame
@@ -46,24 +48,40 @@ Animator anim;
         if (Input.GetAxisRaw("Horizontal") == 0.0f) {
             anim.SetBool("Running", false);
         } else {
-            rigi.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*speed,rigi.velocity.y);
             anim.SetBool("Running", true);
+            if (Input.GetKey(KeyCode.DownArrow)) {
+                rigi.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * 0.5f * speed,rigi.velocity.y);
+            } else {
+                rigi.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*speed,rigi.velocity.y);
+            }
         }
         if ((Input.GetAxis("Jump") > 0 && jumpedLastFrame == false) && GroundCheck()) {
             jumpedLastFrame = true;
+        }
+        if (Input.GetKey(KeyCode.DownArrow)) {
+            anim.SetBool("Creeping", true);
+        } else {
+            anim.SetBool("Creeping", false);
         }
     }
 
     void FixedUpdate() {
         boxCastPosition = new Vector2 (transform.position.x,transform.position.y-1);
         if (jumpedLastFrame) {
+            anim.SetBool("Jumping", true);
             rigi.AddForce(Vector2.up * jumpforce * Time.fixedDeltaTime, ForceMode2D.Impulse);
             jumpedLastFrame = false; }
         if (wallCheckCeiling() && rigi.velocity.y > 0) {
             rigi.AddForce(-Vector2.up, ForceMode2D.Impulse);
         }
-
+        if (!(GroundCheck())) {
+            Debug.Log("INAIR");
+        } else {
+            Debug.Log("ONGROUND");
+            anim.SetBool("Jumping", false);
         }
+
+    }
     
     private bool GroundCheck() {
         if(Physics2D.BoxCast(boxCastPosition,boxSize,0,-transform.up,maxDistance,layerMask)) {
