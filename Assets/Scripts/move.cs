@@ -96,5 +96,10 @@ Animator anim;
         } else {
             return false;
         }
-    } 
+    }
+
+    public void Death()
+    {
+        anim.SetBool("Dying", true);
+    }
 }
