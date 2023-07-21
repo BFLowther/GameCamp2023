@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4864032594944684448
+--- !u!1001 &234222157618369325
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 119621018723796306, guid: 52e9245d9077843868fe925d172fed76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 122.76455
+      value: 125.78392
       objectReference: {fileID: 0}
     - target: {fileID: 119621018723796306, guid: 52e9245d9077843868fe925d172fed76, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.162893
+      value: 22.722038
       objectReference: {fileID: 0}
     - target: {fileID: 119621018723796306, guid: 52e9245d9077843868fe925d172fed76, type: 3}
       propertyPath: m_LocalPosition.z
@@ -52,37 +52,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 145015409882957592, guid: 52e9245d9077843868fe925d172fed76, type: 3}
-      propertyPath: xspeed
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 256475027219659955, guid: 52e9245d9077843868fe925d172fed76, type: 3}
       propertyPath: m_Name
       value: Left Heart Arrow
       objectReference: {fileID: 0}
     - target: {fileID: 1923803784528739397, guid: 52e9245d9077843868fe925d172fed76, type: 3}
       propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1923803784528739397, guid: 52e9245d9077843868fe925d172fed76, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1923803784528739397, guid: 52e9245d9077843868fe925d172fed76, type: 3}
-      propertyPath: m_CollisionDetection
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1923803784528739397, guid: 52e9245d9077843868fe925d172fed76, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1923803784528739397, guid: 52e9245d9077843868fe925d172fed76, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 1923803784528739397, guid: 52e9245d9077843868fe925d172fed76, type: 3}
-      propertyPath: m_UseFullKinematicContacts
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6112050970569173759, guid: 52e9245d9077843868fe925d172fed76, type: 3}
       propertyPath: m_LocalRotation.w

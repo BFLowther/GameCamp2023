@@ -7,6 +7,7 @@ public class DamageOnContact : MonoBehaviour
 
 {
     public int damage;
+    public bool destroyAfterHit = false;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,6 +15,11 @@ public class DamageOnContact : MonoBehaviour
             Debug.Log("damaged");
             Health h = other.gameObject.GetComponent<Health>();
             h.Damage(damage);
+            if (destroyAfterHit){
+                Destroy(transform.parent.gameObject, 0.1f);
+            }
+        }else {
+
         }
         
     }
