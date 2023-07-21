@@ -48,16 +48,16 @@ Animator anim;
             anim.SetBool("Running", false);
         } else {
             anim.SetBool("Running", true);
-            if (Input.GetKey(KeyCode.DownArrow)) {
+            if (Input.GetAxis("Vertical") < 0) {
                 rigi.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * 0.5f * speed,rigi.velocity.y);
             } else {
                 rigi.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*speed,rigi.velocity.y);
             }
         }
-        if ((Input.GetAxis("Jump") > 0 && jumpedLastFrame == false) && GroundCheck()) {
+        if (((Input.GetAxis("Jump") > 0 ||  (Input.GetAxis("Vertical") > 0))&& jumpedLastFrame == false) && GroundCheck()) {
             jumpedLastFrame = true;
         }
-        if (Input.GetKey(KeyCode.DownArrow)) {
+        if (Input.GetAxis("Vertical") < 0) {
             anim.SetBool("Creeping", true);
         } else {
             anim.SetBool("Creeping", false);
