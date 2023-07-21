@@ -16,7 +16,7 @@ public class DamageOnContact : MonoBehaviour
             Health h = other.gameObject.GetComponent<Health>();
             h.Damage(damage);
             if (destroyAfterHit){
-                Destroy(transform.parent.gameObject, 0.5f);
+                Destroy(transform.parent.gameObject, 0.1f);
             }
         }else {
 

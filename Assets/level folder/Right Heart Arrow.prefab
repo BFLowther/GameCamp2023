@@ -78,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8025668742574662451, guid: 1a34d1d1b9ec97643b8d358800b1f0eb, type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8025668742574662451, guid: 1a34d1d1b9ec97643b8d358800b1f0eb, type: 3}
       propertyPath: m_AngularDrag
@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8025668742574662451, guid: 1a34d1d1b9ec97643b8d358800b1f0eb, type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8025668742574662451, guid: 1a34d1d1b9ec97643b8d358800b1f0eb, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
