@@ -8,11 +8,13 @@ public class DamageOnContact : MonoBehaviour
 {
     public int damage;
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.GetComponent<Health>()) {
-            Health h = collision.gameObject.GetComponent<Health>();
+        if (other.gameObject.GetComponent<Health>()) {
+            Debug.Log("damaged");
+            Health h = other.gameObject.GetComponent<Health>();
             h.Damage(damage);
         }
+        
     }
 }

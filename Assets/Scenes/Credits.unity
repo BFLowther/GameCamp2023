@@ -182,7 +182,7 @@ MonoBehaviour:
         m_CallState: 2
   AutoStart: 1
   AutoRestart: 0
-  CountDownTime: 40
+  CountDownTime: 43.338
   timeScale: 1
 --- !u!4 &32257934
 Transform:
@@ -227,11 +227,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 76e3fa728eda2455ab83f89e80059507, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2ac940949dcf54837ba246aca80ceeed, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -303,7 +303,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -338,15 +338,15 @@ AudioReverbZone:
   m_Enabled: 1
   m_MinDistance: 1
   m_MaxDistance: 100000
-  m_ReverbPreset: 24
+  m_ReverbPreset: 14
   m_Room: -1000
-  m_RoomHF: 0
-  m_DecayTime: 8.39
-  m_DecayHFRatio: 1.39
-  m_Reflections: -115
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 985
-  m_ReverbDelay: 0.03
+  m_RoomHF: -237
+  m_DecayTime: 2.7
+  m_DecayHFRatio: 0.79
+  m_Reflections: -1214
+  m_ReflectionsDelay: 0.013
+  m_Reverb: 395
+  m_ReverbDelay: 0.02
   m_HFReference: 5000
   m_Diffusion: 100
   m_Density: 100
@@ -5577,33 +5577,33 @@ MonoBehaviour:
   m_text: 'Credits!
 
 
-    Credits: Evan Gee
+    Credits, Clouds, : Evan Gee
 
 
-    Cat, Steak, and Obstacle Animator:
-    River''s Biggest Fangirl (Evelyn)
+    Cat, Steak, and Obstacle
+    Animator: River''s Biggest Fangirl (Evelyn)
 
 
-    Character Animator and Coolest JoJo Fan:
-    Annette Ha
+    Character Animator and Coolest
+    JoJo Fan: Annette Ha
 
 
-    Background/Texture Artist + Leader of The Camp Tally Hall Fanclub:
-    Parker Carroll
+    Background/Texture Artist + Leader of The Camp Tally
+    Hall Fanclub: Parker Carroll
 
 
-    Gameplay Programmer: Madeline
+    Traps Programmer: Madeline
 
 
-    Music Composition and
-    Movement Programmer: Jack Gruman
+    Music Composer
+    and Movement Programmer: Jack Gruman
 
 
-    UI Programmer AND Designer: Brock Taylor
+    UI Programmer AND Designer: Brock
+    Taylor
 
 
-    Lead
-    Level Editor + Jump Lord: Nate Craig
+    Lead Level Editor + Jump Lord: Nate Craig
 
 
     Special Thanks To!!!!!!
