@@ -33,7 +33,7 @@ Animator anim;
     // Update is called once per frame
     void Update()
     {
-        if (Time.deltaTime == 0) {
+        if (Time.deltaTime == 0 || dead) {
             return;
         }
         if (Input.GetAxis("Horizontal") < 0.0f) {
@@ -54,10 +54,10 @@ Animator anim;
                 rigi.velocity = new Vector2(Input.GetAxisRaw("Horizontal")*speed,rigi.velocity.y);
             }
         }
-        if (((Input.GetAxis("Jump") > 0 ||  (Input.GetAxis("Vertical") > 0))&& jumpedLastFrame == false) && GroundCheck()) {
+        if (((Input.GetAxis("Jump") > 0 || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))&& jumpedLastFrame == false) && GroundCheck()) {
             jumpedLastFrame = true;
         }
-        if (Input.GetAxis("Vertical") < 0) {
+        if ((Input.GetAxis("Fire3") > 0 || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))) {
             anim.SetBool("Creeping", true);
         } else {
             anim.SetBool("Creeping", false);
