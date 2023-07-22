@@ -29,6 +29,9 @@ public class Arrow : MonoBehaviour
     {
         if (!other.gameObject.CompareTag("Player")) {
             hitWall = true;
+            if (gameObject.GetComponentInChildren<DamageOnContact>()) {
+                Destroy(gameObject.GetComponentInChildren<DamageOnContact>());
+            }
         }
     }
 }
